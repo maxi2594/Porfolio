@@ -1,0 +1,28 @@
+.btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 7px 10px 7px 10px;
+  z-index: 2;
+
+  &:hover {
+    color: darken($color: white, $amount: 15);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+.hero__btn {
+  border: 2px solid red;
+  border-radius: 5px;
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Poppins", Helvetica, sans-serif;
+  margin-left: 30px;
+  overflow: hidden;
+  height: 3rem;
+  width: 200px;
+}

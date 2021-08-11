@@ -1,0 +1,31 @@
+* {
+  margin: 0px;
+}
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  color: $main-withe;
+}
+main {
+  width: 100%;
+}
+.mt-1 {
+  margin-top: 5px;
+}
+.mt-5 {
+  margin-top: 20px;
+}
+.mb-1 {
+  margin-bottom: 5px;
+}
+.mb-5 {
+  margin-bottom: 20px;
+}
+.pointer {
+  cursor: pointer;
+}
+// ::-webkit-scrollbar {
+//   display: none;
+// }
