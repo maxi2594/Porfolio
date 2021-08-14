@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import useWindowDimensions from '../../hooks/useWindowDimensions'
+import { MenuScreen } from './MenuScreen';
 
 export const NavBar = () => {
-    const { height, width } = useWindowDimensions();
 
-    
+    const { width } = useWindowDimensions();
+
+
     return (
         <div className="container">
             <div className="navbar">

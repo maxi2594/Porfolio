@@ -1,0 +1,58 @@
+.menu{
+    background-color: rgb(17, 21, 23);
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+}
+.menu__header{
+    align-items: center;
+    justify-content: flex-end;
+    background-color: transparent;
+    display: flex;
+    height: 80px;
+    width: 100vw;
+}
+.menu__close-button{
+    align-items: center;
+    background-color: transparent;
+    color: red;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    margin-right: 1em;
+    width: 40px;
+}
+.menu__content{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+.menu__options{
+    margin-top: 5%;
+    margin: 3em;
+    background-color: transparent;
+    width: fill;
+    height: 450px;
+}
+.menu__option{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25%;
+    background-color: transparent;
+    display: flex;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+
+    &:hover{
+        background-color: lighten($color: rgb(17, 21, 23), $amount: 10);
+    }
+}
