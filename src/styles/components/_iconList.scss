@@ -1,0 +1,25 @@
+.iconsList {
+  background-color: $main-withe;
+  color: black;
+  height: 250px;
+  justify-content: center;
+}
+.iconsList__section {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding-right: 30px;
+  padding-left: 30px;
+  height: 70%;
+  width: 100%;
+}
+.iconsList__icon-box {
+  height: 80%;
+  width: 8rem;
+
+  & i {
+    height: 100%;
+    font-size: 8rem;
+    color: darken($color: $main-withe, $amount: 45);
+  }
+}

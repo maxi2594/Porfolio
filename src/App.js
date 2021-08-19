@@ -1,13 +1,10 @@
-import { Hero } from './components/main/Hero'
-import { NavBar } from './components/header/NavBar'
+import { useReducer, useState } from 'react'
 
 import './styles/styles.scss'
 import 'animate.css'
-import { MenuScreen } from './components/header/MenuScreen'
-import { useReducer, useState } from 'react'
+
 import { uiContext } from './context/uiContext'
 import { uiReducer } from './reducers/uiReducer'
-import { HomeScreen } from './components/HomeScreen'
 import { AppRuter } from './routes/AppRuter'
 
 const init = ()=>(
@@ -23,7 +20,7 @@ function App() {
 
   return (
 
-    <uiContext.Provider value={ state }>
+    <uiContext.Provider value={ {state, dispatch} }>
 
           <AppRuter/>
 

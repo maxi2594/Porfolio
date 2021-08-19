@@ -3,15 +3,29 @@
   background-color: $dark-grey;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   height: 70px;
   padding: 0px 45px;
-  width: 100vw;
+  width: 100%;
+
+  @media (max-width: 800px) {
+    padding: 0px 15px;
+  }
+}
+.navbar__box {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 50%;
+  flex-direction: row;
+}
+.navbar__logo {
+  justify-self: start;
 }
 .navbar__links {
+  align-items: center;
   display: flex;
-  justify-content: space-between;
-  width: 35%;
+  justify-content: flex-end;
+  width: 100%;
 }
 .navbar__links a {
   color: $main-withe;
@@ -24,12 +38,16 @@
   &:hover {
     background-color: darken($color: $dark-grey, $amount: 5);
   }
+
+  @media (min-width: 1200px) {
+    margin-left: 40px;
+  }
 }
 .navbar__burger-button {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100px;
+  justify-content: end;
+  width: 100%;
   height: 100%;
   background-color: $dark-grey;
 }
