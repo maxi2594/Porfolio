@@ -10,6 +10,10 @@ export const HomeScreen = () => {
                 <Hero/>
                 <IconsList/>
                 <PhraseBox/>
+                <div style={{
+                    height:'900px',
+                    width: '100%'
+                }}>hello</div>
             </main>   
         </>
     )
