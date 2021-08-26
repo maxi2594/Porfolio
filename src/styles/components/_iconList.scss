@@ -3,6 +3,14 @@
   color: black;
   height: 250px;
   justify-content: center;
+  overflow: hidden;
+  @media (max-width: 560px) {
+    height: 200px;
+  }
+  ::-webkit-scrollbar {
+  display: none;
+}
+
 }
 .iconsList__section {
   align-items: center;
@@ -12,6 +20,7 @@
   padding-left: 30px;
   height: 70%;
   width: 100%;
+  overflow: scroll;
 }
 .iconsList__icon-box {
   height: 80%;
@@ -19,7 +28,14 @@
 
   & i {
     height: 100%;
-    font-size: 8rem;
+    font-size: 7rem;
     color: darken($color: $main-withe, $amount: 45);
+  }
+
+  @media (max-width: 960px) {
+    min-width: 25%;
+  }
+  @media (max-width: 560px) {
+    min-width: 50%;
   }
 }

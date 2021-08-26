@@ -3,7 +3,7 @@ import React from 'react'
 export const Hero = () => {
     return (
         <div className="container">
-            <div className="hero">
+            <div className="hero shadow-bottom">
                 <div className="hero__cover">
                     <div className="hero__container">
 

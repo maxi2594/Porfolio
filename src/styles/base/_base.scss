@@ -8,6 +8,7 @@ body {
   box-sizing: border-box;
   color: $main-withe;
   background-color: darken($color: $dark-grey, $amount: 10);
+  overflow-x: hidden;
 }
 main {
   width: 100%;
@@ -32,6 +33,10 @@ main {
   display: flex;
   width: 100vw;
 }
+.shadow-bottom{
+  box-shadow: -18px 1px 20px darken($color: $main-withe, $amount: 30);
+}
+
 // ::-webkit-scrollbar {
 //   display: none;
 // }

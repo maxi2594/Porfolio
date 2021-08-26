@@ -37,7 +37,10 @@ export const IconsList = () => {
                 {
                     icons.map( icon => (
                         
-                        <Icon icon={icon.icon}/>
+                        <Icon 
+                            icon={icon.icon}
+                            key={icon.icon}
+                        />
                     ))
                 }
                 </div>
